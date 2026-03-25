@@ -1,4 +1,4 @@
-package MagicFridgeAI.model;
+package MagicFridgeAI.Model;
 
 
 import jakarta.persistence.*;
