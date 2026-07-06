@@ -1,6 +1,7 @@
 package MagicFridgeAI.Model;
 
 
+import MagicFridgeAI.enums.Categoria;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -19,11 +20,10 @@ public class FoodItem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-    private String categoria;
     private Integer quantidade;
+    @Enumerated(EnumType.STRING)
+    private Categoria categoria;
     private LocalDateTime validade;
-
-
 
 
 }
